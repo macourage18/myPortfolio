@@ -77,7 +77,7 @@ export const Navbar = () =>{
       <nav className={ show ? "is-hidden" : "is-visible" } >
       
       <div className="logo">
-        <Link to= "/" > <img src= {require('../media/macourage.png')} alt="" /> </Link>
+        <Link to= "/" > <img src= {require('../components/media/macourage.png')} alt="" /> </Link>
       </div>
 
       <div className="mid">

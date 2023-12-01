@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border border-box;
-  font-family: nexa;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 :root{
@@ -60,7 +61,7 @@
   width: 100%;
   height: 100%;
   background-size: 100%;
-  background-image: url("./media/office desk.jpg");
+  background-image: url("../src/components/media/office\ desk.jpg");
   transform: rotate(270deg) scale(1.1);
   position: absolute;
 }
@@ -88,7 +89,6 @@
   100% { background-color: #006b96;transition: ease-in-out 0.5s;}
   
 }
-
 
 
 .txt1 h4{
