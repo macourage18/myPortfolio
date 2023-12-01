@@ -1,0 +1,166 @@
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding:10px 0;
+  background-color: var(--myblack);
+  color: #fff;
+  top: 0;
+  z-index: 40;
+  transition: top 0.4s linear;
+  position: fixed;
+}
+.is-visible {
+  top: 0;
+}
+
+.is-hidden{
+  top: -80px;
+  
+}
+
+.logo{
+  display: flex ;
+  justify-content: center;
+
+
+}
+.logo img{
+  width: 50px;
+}
+.mid{
+  display: flex; 
+  justify-content: center;
+  
+}
+.mid a{
+  text-decoration: none;
+  color: #fff;
+  padding: 0 10px;
+  font-weight: 400;
+}
+.icons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px ;
+}
+
+.icns{
+  color: #fff;
+}
+.hamburger{
+  position: absolute;
+  right: 0;
+  display: none;
+  width: 35px;
+  cursor: pointer;
+  margin: 15px;
+
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+
+
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin: 6px 0px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+.hamburger.is-active::before{
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+.hamburger.is-active::after{
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar{
+  opacity: 0;
+}
+
+.hamburger.not-active::before{
+  transform: rotate(0deg) translate(0px,0px);
+}
+.hamburger.not-active::after{
+  transform: rotate(0deg) translate(0px, 0px);
+}
+
+.hamburger.not-active .bar{
+  opacity: 100%;
+}
+
+
+.mobilenav{
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  left: 100%;
+  min-height: 100vh;
+  width: 100%;
+  top: 63px;
+  right: 0;
+  transition: 0.4s;
+}
+
+.mobilenav.is-active{
+  left: 50%;
+}
+
+
+
+
+
+@media screen and (max-width: 699px){
+  nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: none;
+  }
+  
+  .mid{
+    display: none;
+  }
+  .icons{
+    display: none;
+  }
+  
+.mobilenav{
+  display:block;
+}
+.mobilenav a{
+  display: block;
+  padding: 10px 30px;
+  text-align: left;
+}
+.hamburger{
+  display: inline-block ;
+}
+nav{
+  grid-template-columns: 1fr 2fr;
+}
+}
+
+@media (min-width: 700px) and (max-width: 1024px){
+  .mobilenav{
+    display: none;
+  }
+  .hamburger{
+    display: none;
+  }
+}

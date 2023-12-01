@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+:root{
+  --myblack: #060608;
+  --myblack2: #222831;
+  --mygrey: #ececec;
+  --mygrey2: #adaca7;
+  --mygrey3: #dee1ec;
+  --mywhite: #fff;
+  --myred: #c50000;
+  --myred2: #e70000;
+  --mytransparent: var(--mygrey2 0.03);
+
+  --clasic-font: "nothing you could do";
+  --fontsizeBig: 50px;
+  --fontsizeSm: 18px;
+  --fontsizeVsm: 13px;
+  --fontsizeMe: 30px; 
+  
+}
+
+.div1{
+  position:relative;
+  padding: 0 10%;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  background-image: url("../media/contact.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.chat{
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}
+
+.cont{
+  position: relative;
+  width: 100%;
+  height:100%;
+}
+
+.me{
+  position: absolute;
+  bottom: 50px;
+  left: 90px;
+  width: 400px;
+  height: 400px;
+  background-color: var(--myblack);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.me img{
+  width: 100%;
+}
+
+.cont2{
+  width: 100%;
+  height: 90%;
+  padding: 20px;
+}
+
+.div2{
+  width: 60%;
+  height: 470px;
+  border-radius: 10px;
+  background-color: var(--mytransparent);
+  backdrop-filter: blur(3px) ;
+  box-shadow: 0px 0px 5px 5px rgb(224, 224, 224);
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.div2 form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div2 input{
+  width: 80%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: solid 1px var(--mygrey2);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.div2 textarea{
+  background: transparent;
+  min-width: 83%;
+  min-height: 100px;
+  max-width: 83%;
+  max-height: 150px;
+  outline: none;
+  border: solid 1px var(--mygrey2);
+  margin-top: 10px;
+}
+.subBtn{
+  background-color: var(--mygrey);
+  padding: 10px 35px;
+  border-radius: 10px;
+  color: var(--myblack);
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  margin-top: 15px;
+
+  background: linear-gradient(to right, var(--myblack) 50%, var(--mygrey) 50%);
+    background-size: 201% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    border-radius: 20px;
+}
+
+.subBtn:hover{
+  background-position: left bottom;
+  color: var(--mywhite);
+}
+
+.subBtn:active{
+  color: var(--myblack2);
+}
+
+.div3{
+  margin-top: 20px;
+  width: 85%;
+  height: 1px;
+  background-color: var(--mygrey2);
+  margin-left: 20px;
+}
+.cont2  p {
+  color: var(--myblack2);
+  padding: 10px 0 0 20px;
+  font-weight: 500;
+}
+.icons2{
+  padding: 15px 0 0 5px;
+  display: block;
+}
+
+.icns2{
+  width: 50px;
+  color: var(--myblack);
+}
+
+.num{
+  font-size: 10px;
+  font-family: nexa light;
+}
+.phn{
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0 0 20px;
+}
+

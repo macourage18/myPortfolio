@@ -1,0 +1,56 @@
+.myfooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 0 0;
+  width: 100%;
+  background-color: var(--myblack);
+  color: var(--mywhite);
+}
+
+.arrange{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logof{
+  width: 200px;
+  opacity: 80%;
+}
+.logof img{
+  display: flex;
+  align-items: center;
+  width: 100%; 
+}
+
+.mid2{
+  display: flex;
+  justify-content: flex-start;
+  padding:10px 0 0 40px;
+  gap: 20px;
+}
+
+.mid2 a{
+  text-decoration: none;
+}
+
+.icons3{
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0 0 40px;
+  gap: 20px;
+}
+
+.icons3 div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.copy1{
+  display: block;
+  text-align: center;
+  font-size: var(--fontsizeVsm);
+  padding: 20px 0;
+}

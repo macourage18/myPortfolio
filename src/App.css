@@ -1,38 +1,222 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border border-box;
+  font-family: nexa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --myblack: #060608;
+  --myblack2: #222831;
+  --mygrey: #ececec;
+  --mygrey2: #adaca7;
+  --mygrey3: #dee1ec;
+  --mywhite: #fff;
+  --myred: #c50000;
+  --myred2: #e70000;
+
+  --clasic-font: "nothing you could do";
+  --fontsizeBig: 50px;
+  --fontsizeSm: 18px;
+  --fontsizeVsm: 13px;
+  --fontsizeMe: 30px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ====================== sec 1 start ===================== */
+
+.sec1{
+  padding: 100px 8%;
+  padding-bottom: 50px;
+  background-color: var(--mygrey);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.intro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.txt1{
+  /* padding-top: 50px; */
+  /* display: flex; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flestart;
+  /* flex-direction: column; */
+  padding: 20px;
+
+  border-radius: 15px;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.txt1::before{
+  content: '';
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-image: url("./media/office desk.jpg");
+  transform: rotate(270deg) scale(1.1);
+  position: absolute;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg1{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  z-index: -1;
+  opacity: 60%;
+  animation: mymove ease-in 5s infinite ;
+  
+
 }
+
+@keyframes mymove{
+  0%{background-color: #772102; transition: all 0.5s}
+  20% {background-color: #004157; translate: (75deg);}
+  40% {background-color: purple;}
+  60% { background-color: #004b00;}
+  80% { background-color: #525200;}
+  100% { background-color: #006b96;transition: ease-in-out 0.5s;}
+  
+}
+
+
+
+.txt1 h4{
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--mywhite);
+  text-shadow: 0 5px 5px 5px #141414;
+  padding-top: 150px;
+}
+
+.txt1 h1{
+  font-size: 80px;
+  color: var(--mywhite);
+  text-shadow: 0 5px 5px 5px #161616;
+}
+.txt1 p{
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--mywhite);
+}
+.txt1 span{
+  font-size: 16px;
+}
+
+.hireMe, .contactMe{
+  margin-top: 20px;
+  background-color: var(--mygrey);
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: var(--myblack);
+  cursor: pointer;
+  border: none;
+
+  background: linear-gradient(to right, var(--myblack) 50%, var(--mygrey) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .7s ease-out;
+    border-radius: 20px;
+}
+
+.hireMe:hover, 
+.contactMe:hover{
+  background-position: left bottom;
+  color: var(--mywhite);
+}
+
+
+
+.contactMe{
+  margin-left: 20px;
+}
+
+
+.image1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: black;
+}
+
+.image1 img{
+  width: 80%;
+}
+/* ====================== rwd sec1 start ======================= */
+@media screen and (max-width: 699px){
+  .intro{
+    grid-template-columns: 1fr;
+  }
+  .txt1{
+    height: 250px;
+  }
+  .txt1 h4{
+    font-size: var(--fontsizeSm);
+    font-weight: 400;
+    padding-top: 50px;
+  }
+  .txt1 h1{
+    font-size: var(--fontsizeMe);
+  
+  }
+  .txt1 p{
+    padding-top: 8px;
+    font-size: var(--fontsizeVsm);
+   
+  }
+  .txt1 span{
+    font-size: 10px;
+  }
+  .hireMe, .contactMe{
+    padding: 5px 10px;
+  }
+  
+  .txt1::before{
+    top: 0;
+  }
+
+  .image1{
+    height: 250px;
+  }
+  
+}
+/* ====================== sec1 end ===================== */
+
+/* ====================== sec2 start ===================== */
+
+
+.sec2{
+  padding: 0 8%;
+}
+
+.image2{
+  position: relative;
+}
+
+.image2 img{
+  width: 100%;
+}
+
+.txt2{
+  position: absolute;
+  right: 43%;
+  top: 25%;
+  color: var(--mywhite);
+  font-family: var(--clasic-font);
+  font-size: var(--fontsizeBig);
+}
+
+
