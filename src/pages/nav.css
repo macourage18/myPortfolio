@@ -104,6 +104,7 @@ nav{
 }
 
 
+
 .mobilenav{
   position: fixed;
   display: none;
@@ -153,6 +154,14 @@ nav{
 }
 nav{
   grid-template-columns: 1fr 2fr;
+  padding: 10px 0 10px;
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 5;
 }
 }
 

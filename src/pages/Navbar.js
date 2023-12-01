@@ -28,9 +28,9 @@ export const Navbar = () =>{
     
   useEffect (()=>{
     if (typeof window !== "undefined"){
-      window.addEventListener("scroll", controlNav , handleOverlay )
+      window.addEventListener("scroll", controlNav )
       return () =>{
-        window.removeEventListener("scroll", controlNav, handleOverlay)
+        window.removeEventListener("scroll", controlNav)
       
     }
     }
@@ -39,7 +39,7 @@ export const Navbar = () =>{
   //eslint-disable-next-line
 
   function handleOverlay (){
-    return useToggle? setOverlay(setActive) : " "
+    return useToggle? setOverlay(setActive) : ""
   }
   useEffect (()=>{
     if (typeof window !== "undefined"){
@@ -60,7 +60,9 @@ export const Navbar = () =>{
   }
 
  return (
-    <div onClick={handleOverlay} className={overlay}>
+    <div>
+
+      <div className={`overlay ${active}`} onClick={handleOverlay}></div>
       
       <nav className={`mobilenav ${active}`} >
         <Link to = "/"> Home </Link> 
@@ -68,10 +70,11 @@ export const Navbar = () =>{
         <Link to = "/About"> About </Link>
         <Link to = "/Contact"> Contact </Link>
 
-        <Link to=""> <Whatsapp className="icns" /> </Link>
-        <Link to=""> <Github className="icns" /> </Link>
-        <Link to=""> <Twitter className="icns" /> </Link>
-        <Link to=""> <Linkedin className="icns" /> </Link>
+       
+        <Link to={"https://wa.link/lle71m"}> <Whatsapp className="icns" /> </Link>
+        <Link to={"https://github.com/macourage18"}> <Github className="icns" /> </Link>
+        <Link to= {"https://twitter.com/mac_courage"} > <Twitter className="icns" /> </Link>
+        <Link to= {"https://www.linkedin.com/in/courage-macjude-095a25220/"}> <Linkedin className="icns" /> </Link>
 
       </nav>
       <nav className={ show ? "is-hidden" : "is-visible" } >
