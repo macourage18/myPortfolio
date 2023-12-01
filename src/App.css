@@ -10,6 +10,7 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+
 :root{
   --myblack: #060608;
   --myblack2: #222831;
@@ -209,19 +210,30 @@
 
 .image2{
   position: relative;
+  
 }
 
 .image2 img{
   width: 100%;
+  flood-opacity: 0.5 ;
 }
 
 .txt2{
   position: absolute;
-  right: 43%;
+  left: 9%;
+  top: 30%;
+  color: var(--myblack2);
+  font-size: 40px;
+}
+.txt3{
+  left: 9%;
   top: 25%;
-  color: var(--mywhite);
-  font-family: var(--clasic-font);
-  font-size: var(--fontsizeBig);
+  position: absolute;
+}
+.txt5{
+  left: 9%;
+  position: absolute;
+  top: 50%;
 }
 
 

@@ -2,88 +2,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
 
-.myfooter{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0 0 0;
-  width: 100%;
-  background-color: var(--myblack);
-  color: var(--mywhite);
-}
 
 .arrange{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 150px 1fr 3fr;
+  width: auto;
   align-items: center;
+  justify-content: space-around;
+  background-color: var(--myblack);
+  color: var(--mywhite);
+  padding: 20px 8%;
 }
 .logof{
-  width: 200px;
+  display: flex;
+  width: 100px;
   opacity: 80%;
 }
 .logof img{
-  display: flex;
-  align-items: center;
   width: 100%; 
 }
 
 .mid2{
   display: flex;
-  justify-content: flex-start;
-  padding:10px 0 0 40px;
-  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
 }
 
 .mid2 a{
   text-decoration: none;
+  font-weight: 200;
+}
+.con{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
 }
 
 .icons3{
   display: flex;
   justify-content: flex-start;
-  padding: 10px 0 0 40px;
+  align-items: center;
   gap: 20px;
 }
 
-.icons3 div {
+.num1{
+  font-family:  'Ubuntu', sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+}
+.phn1{
   display: flex;
-  align-items: center;
   gap: 5px;
-}
-
-.copy1{
-  display: block;
-  text-align: center;
-  font-size: var(--fontsizeVsm);
-  padding: 20px 0;
-}
-.num{
-  font-family: 'Ubuntu', sans-serif;
 }
 /* ============ rwd start =========== */
 
 @media screen and (max-width: 699px){
   .arrange{
-    flex-direction: column;
+    grid-template-columns: 1fr;
     align-items: center;
-    align-content: center;
+    justify-content: center;
   }
   .logof{
+    width: 100%;
+    justify-content: center;
+  }
+  .logof img{
     width: 100px;
-    align-items: center;
   }
   .mid2{
+    flex-direction: row;
     justify-content: center;
-    padding:5px 0 0 20px;
     gap: 10px;
+    font-weight:300px;
+    padding: 10px;
   }
   .icons3{
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: center;
-   padding: 10px;
+    gap: 10px;
   }
-
+  .con{
+    align-items: center;
+  }
 
 }
