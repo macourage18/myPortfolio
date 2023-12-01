@@ -10,8 +10,8 @@ export const Footer = ()=> {
       <div className="arrange">
       <div className="logof">
           <Link to={"/"}> <img src={require("../media/macourage.png")} alt=""/> </Link>
-        </div>
-        <div>
+      </div>
+      <div>
         <div className="mid2">
           <Link to = "/"> Home </Link> 
           <Link to = "/Portfolio"> Portfolio </Link>

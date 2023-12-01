@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
 .myfooter{
   display: flex;
   flex-direction: column;
@@ -53,4 +57,33 @@
   text-align: center;
   font-size: var(--fontsizeVsm);
   padding: 20px 0;
+}
+.num{
+  font-family: 'Ubuntu', sans-serif;
+}
+/* ============ rwd start =========== */
+
+@media screen and (max-width: 699px){
+  .arrange{
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .logof{
+    width: 100px;
+    align-items: center;
+  }
+  .mid2{
+    justify-content: center;
+    padding:5px 0 0 20px;
+    gap: 10px;
+  }
+  .icons3{
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+  }
+
+
 }
