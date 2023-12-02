@@ -42,11 +42,9 @@ export const Navbar = () =>{
     return useToggle? setActive("not-active") : setOverlay("close")
   }
   useEffect (()=>{
-    return(
-      typeof window !== "undefined"? window.addEventListener("scroll",handleClick,handleOverlay): window.addEventListener("scroll",handleClick,handleOverlay)
-    )
-   
-    
+    if (typeof window !== "undefined"){
+      window.addEventListener("scroll",handleClick,handleOverlay)
+    }
   //eslint-disable-next-line
   }, [])
   //eslint-disable-next-line
