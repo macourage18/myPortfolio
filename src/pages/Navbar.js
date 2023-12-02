@@ -68,7 +68,7 @@ export const Navbar = () =>{
       handleClick()
       }}>
       {useToggle }
-      </div>close
+      </div>
       
       <nav className={`mobilenav ${active}`} >
         <Link to = "/"> Home </Link> 
