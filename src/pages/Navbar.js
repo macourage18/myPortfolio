@@ -93,7 +93,7 @@ export const Navbar = () =>{
       <Link to = "/"> Home </Link>
       <Link to = "/Portfolio"> Portfolio </Link>
       <Link to = "/About"> About </Link>
-      <Link to = "/Contact"> Contact </Link>close
+      <Link to = "/Contact"> Contact </Link>
       </div>
 
       <div className="icons">

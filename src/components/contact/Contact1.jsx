@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 
 export const Contact1 = () =>{
 
-  const [ state, handleSubmit ] = useForm ("meqbkybj")
+  const [ state, handleSubmit ]= useForm("mqkvvoan")
   if (state.succeeded){
     return <h5> your message has been sent </h5>
   }
@@ -27,17 +27,16 @@ export const Contact1 = () =>{
         <div className ="cont2">
           <div className ="div2">
             <form onSubmit={handleSubmit}>
-              <label htmlFor="name"></label>
-              <input type="text" placeholder=" Name" id="name"/>
-              <ValidationError prefix="Name" field="name" errors={state.errors} />
-              <label htmlFor="email"></label>
-              <input type="email" placeholder="Email" id="email" />
-              <ValidationError prefix="Email" field="email" errors={state.errors} />
+              <input type="text" placeholder=" Name" id="name" required />
+              <ValidationError className="err" prefix="Name" field="name" errors={state.errors} />
+
+              <input type="email" placeholder="Email" id="email" required />
+              <ValidationError className="err" prefix="Email" field="email" errors={state.errors} />
               <textarea placeholder="Your message" name="message" id="messsage"/>
-              <ValidationError prefix ="Message" field ="message" errors={state.errors} />
-              <button type={"submit"} disabled={"state.submitting"} className="subBtn">
-              Submit
-            </button>
+              <ValidationError className="err" prefix ="Message" field ="message" errors={state.errors} />
+              <button type="submit" disabled={"state.submitting"} className="subBtn">
+              Send
+              </button>
             </form>
 
             <div className="div3"> </div>
