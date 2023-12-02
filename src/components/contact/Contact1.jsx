@@ -9,7 +9,13 @@ export const Contact1 = () =>{
 
   const [ state, handleSubmit ]= useForm("mqkvvoan")
   if (state.succeeded){
-    return <h5> your message has been sent </h5>
+    return (<div className="susPage">
+    <div className="cont3">
+      <img className="img" src={require("../media/emial.png")} alt="" />
+      <h5 className="success"> Your message Has Been Sent !!! </h5>
+    </div>
+    </div>
+    )
   }
 
   return(
@@ -27,14 +33,13 @@ export const Contact1 = () =>{
         <div className ="cont2">
           <div className ="div2">
             <form onSubmit={handleSubmit}>
-              <input type="text" placeholder=" Name" id="name" required />
-              <ValidationError className="err" prefix="Name" field="name" errors={state.errors} />
-
-              <input type="email" placeholder="Email" id="email" required />
+              <input type="text" id="name" placeholder="Your name" required />
+              <ValidationError className="err" prefix="Text" field="text" errors={state.errors} />
+              <input type="email" placeholrequiredder="Email" id="email" required />
               <ValidationError className="err" prefix="Email" field="email" errors={state.errors} />
-              <textarea placeholder="Your message" name="message" id="messsage"/>
+              <textarea placeholder="Your message" name="message" id="messsage" required />
               <ValidationError className="err" prefix ="Message" field ="message" errors={state.errors} />
-              <button type="submit" disabled={"state.submitting"} className="subBtn">
+              <button type="submit" disabled={state.submitting} className="subBtn">
               Send
               </button>
             </form>

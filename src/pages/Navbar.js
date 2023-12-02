@@ -62,7 +62,7 @@ export const Navbar = () =>{
   }
 
  return (
-    <div>close
+    <div>
 
       <div className={`overlay ${overlay}`} onClick={()=>{handleOverlay()
       handleClick()
@@ -97,7 +97,7 @@ export const Navbar = () =>{
       </div>
 
       <div className="icons">
-        <Link to={"https://wa.link/lle71m"}> <Whatsapp className="icns" /> close</Link>
+        <Link to={"https://wa.link/lle71m"}> <Whatsapp className="icns" /></Link>
         <Link to={"https://github.com/macourage18"}> <Github className="icns" /> </Link>
         <Link to= {"https://twitter.com/mac_courage"} > <Twitter className="icns" /> </Link>
         <Link to= {"https://www.linkedin.com/in/courage-macjude-095a25220/"}> <Linkedin className="icns" /> </Link>
