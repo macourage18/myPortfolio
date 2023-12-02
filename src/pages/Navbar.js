@@ -10,7 +10,7 @@ export const Navbar = () =>{
   const [useToggle, setUseToggle] = useState (false)
   const [show, setShow] = useState (false)
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [overlay, setOverlay] = useState ("not-active")
+  const [overlay, setOverlay] = useState ("close")
 
 
   const controlNav = ()=>{
@@ -38,18 +38,22 @@ export const Navbar = () =>{
   }, [lastScrollY])
   //eslint-disable-next-line
 
-  function handleOverlay (){
-    return useToggle? setOverlay(setActive) : ""
+  function handleClick (){
+    return useToggle? setActive("not-active") : setOverlay("close")
   }
   useEffect (()=>{
-    if (typeof window !== "undefined"){
-      window.addEventListener("scroll", handleOverlay)
-    }
+    return(
+      typeof window !== "undefined"? window.addEventListener("scroll",handleClick,handleOverlay): window.addEventListener("scroll",handleClick,handleOverlay)
+    )
+   
+    
   //eslint-disable-next-line
-  }, [overlay])
+  }, [])
   //eslint-disable-next-line
 
-  
+  function handleOverlay (){
+    return useToggle?  setOverlay("close"): setOverlay("open")
+  }
 
   const handleChange = ()=>{
     setUseToggle(!useToggle)
@@ -60,9 +64,13 @@ export const Navbar = () =>{
   }
 
  return (
-    <div>
+    <div>close
 
-      <div className={`overlay ${active}`} onClick={handleOverlay}></div>
+      <div className={`overlay ${overlay}`} onClick={()=>{handleOverlay()
+      handleClick()
+      }}>
+      {useToggle }
+      </div>close
       
       <nav className={`mobilenav ${active}`} >
         <Link to = "/"> Home </Link> 
@@ -87,18 +95,19 @@ export const Navbar = () =>{
       <Link to = "/"> Home </Link>
       <Link to = "/Portfolio"> Portfolio </Link>
       <Link to = "/About"> About </Link>
-      <Link to = "/Contact"> Contact </Link>
+      <Link to = "/Contact"> Contact </Link>close
       </div>
 
       <div className="icons">
-        <Link to={"https://wa.link/lle71m"}> <Whatsapp className="icns" /> </Link>
+        <Link to={"https://wa.link/lle71m"}> <Whatsapp className="icns" /> close</Link>
         <Link to={"https://github.com/macourage18"}> <Github className="icns" /> </Link>
         <Link to= {"https://twitter.com/mac_courage"} > <Twitter className="icns" /> </Link>
         <Link to= {"https://www.linkedin.com/in/courage-macjude-095a25220/"}> <Linkedin className="icns" /> </Link>
       </div>
       <button onClick={() => {
         handleChange()
-        handleActive();
+        handleActive()
+        handleOverlay();
         }} className={`hamburger ${active} `}>
         <div class="bar"></div>
       </button>

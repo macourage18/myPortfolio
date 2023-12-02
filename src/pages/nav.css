@@ -124,6 +124,14 @@ nav{
 }
 
 
+.overlay.open{
+  display: block;
+}
+
+.overlay.close{
+  display: none;
+}
+
 
 
 

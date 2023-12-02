@@ -17,9 +17,11 @@ export const Contact1 = () =>{
       <div className="div1">
         <h1 className="chat"> Lets Chat! </h1>
         <div className="cont">
+        <Link to = {"/"}> 
           <div className="me">
-            <Link to = {"/"}> <img src={require("../media/macourage2.png")} alt="" /> </Link>
+            <img src={require("../media/macourage2.png")} alt="" /> 
           </div>
+          </Link>
         </div>
         
         <div className ="cont2">
