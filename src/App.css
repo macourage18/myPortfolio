@@ -280,5 +280,41 @@
   position: absolute;
   top: 50%;
 }
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  padding-bottom: 20px;
+  gap: 30px;
+}
+.see{
+  font-size: var(--fontsizeVsm);
+  font-weight: 300;
+  color: var(--myblack2);
+  padding-bottom: 10px;
+  padding-left: 20px ;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  gap: 0px;
+}
+.card img{
+  width: 100%;
+}
+.des{
+  height:45px;
+  background-color: var(--myblack);
 
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.des p{
+  color: var(--mywhite);
+  font-size: var(--fontsizeVsm);
+  font-weight: 400;
+}
