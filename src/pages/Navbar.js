@@ -46,7 +46,7 @@ export const Navbar = () =>{
       window.addEventListener("scroll",handleClick,handleOverlay)
     }
   //eslint-disable-next-line
-  }, [])
+  }, [active])
   //eslint-disable-next-line
 
   function handleOverlay (){
