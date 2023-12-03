@@ -321,9 +321,22 @@
 }
 
 @media screen and (max-width: 699px){
+
+  .image2{
+    height: 100px;
+  }
  
   .txt2{
     font-size: var(--fontsizeSm);
+  }
+
+  .txt3{
+    font-size: var(--fontsizeVsm);
+    top: 15%;
+  }
+  .txt5{
+    font-size: var(--fontsizeVsm);
+    bottom: 40%;
   }
 
 
@@ -343,6 +356,10 @@
   }
   .des{
     width: 100%;
+  }
+  .des p{
+    font-weight: 300;
+    font-size: 12px;
   }
 
 }
