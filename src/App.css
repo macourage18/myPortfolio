@@ -325,22 +325,24 @@
   .txt2{
     font-size: var(--fontsizeSm);
   }
-}
 
-.container{
-  grid-template-columns: 1fr;
-  justify-content: center;
-  align-items: center;
-}
-.container div{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.card{
-  width: 90%;
-}
-.des{
-  width: 100%;
+
+  .container{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    width: 90%;
+  }
+  .des{
+    width: 100%;
+  }
+
 }
