@@ -346,7 +346,6 @@
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    padding-top: 200px;
   }
   .container div{
     display: flex;
