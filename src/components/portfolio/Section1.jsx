@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-export const Section2 =() =>{
+export const Section1 =() =>{
   return(
     <section className="sec2">
         <div className="image2">
