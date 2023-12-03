@@ -209,7 +209,6 @@
   }
   
 }
-
 @media (min-width:700px) and (max-width:1050px){
   .txt1{
     height: 80%;
@@ -252,12 +251,14 @@
 
 
 .sec2{
+  position: relative;
   padding: 0 8%;
 }
 
 .image2{
-  margin-top: 60px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   
 }
 
@@ -345,6 +346,7 @@
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+    padding-top: 200px;
   }
   .container div{
     display: flex;

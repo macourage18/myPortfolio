@@ -1,0 +1,115 @@
+:root{
+  --myblack: #060608;
+  --myblack2: #222831;
+  --mygrey: #ececec;
+  --mygrey2: #adaca7;
+  --mygrey3: #dee1ec;
+  --mywhite: #fff;
+  --myred: #c50000;
+  --myred2: #e70000;
+  --mytransparent: var(--mygrey2 0.03);
+
+  --clasic-font: "nothing you could do";
+  --fontsizeBig: 50px;
+  --fontsizeSm: 18px;
+  --fontsizeVsm: 13px;
+  --fontsizeMe: 30px; 
+  
+}
+
+
+.sect{
+  display: grid;
+  background-color: var(--myblack);
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../media/home.png);
+  background-size: 100%;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 100%;
+  height: 100vh;
+}
+
+.mac{
+  position: relative;
+  width: 70%;
+  opacity: 40%;
+  animation: bounc ease-in infinite alternate-reverse 3s ;
+
+}
+@keyframes bounc {
+  0%{top: 0px;}
+  50%{bottom: 15px;}
+  100%{top: 15px;}
+}
+
+.text{
+  position: relative;
+  width: 60%;
+  height: 55%;
+  background-color: var(--mytransparent);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 10px 5px black;
+  border-radius: 20px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--mywhite);
+  animation: bounce ease-in-out infinite alternate-reverse 3s ;
+}
+@keyframes bounce {
+  0%{top: 0px;}
+  50%{bottom: 15px;}
+  100%{top: 15px;}
+}
+.text h1{
+  font-size: var(--fontsizeBig);
+}
+ 
+@media screen and (max-width:699px){
+  .sect{
+    grid-template-columns: 1fr;
+    background-size: 100%;
+    height: 100%;
+  }
+  .box{
+    height: 300px;
+  }
+  .box:nth-of-type(1){
+    margin-top: 50px;
+  }
+  .mac{
+    opacity: 80%;
+  }
+  .text{
+    width: 75%;
+    height: 80%;
+  }
+  .text h1{
+    font-size: 40px;
+  }
+  .text h2{
+    font-size: var(--fontsizeSm);
+  }
+}
+@media (min-width: 700px) and (max-width:1050px){
+  .text{
+    height: 80%;
+  }
+  .box{
+    height: 300px;
+  }
+  .text h1{
+    font-size: 40px;
+  }
+}
