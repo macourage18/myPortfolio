@@ -83,7 +83,7 @@
     height: 100%;
   }
   .box{
-    height: 300px;
+    height: 350px;
   }
   .box:nth-of-type(1){
     margin-top: 50px;
@@ -107,7 +107,7 @@
     height: 80%;
   }
   .box{
-    height: 300px;
+    height: 350px;
   }
   .text h1{
     font-size: 40px;
