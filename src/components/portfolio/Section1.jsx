@@ -7,7 +7,7 @@ export const Section1 =() =>{
           <p className="txt3">====================</p>
           <p className="txt2"> My Works </p>
           <p className="txt5">====================</p>
-          <img src={require("../media/MacBook Pro 16_ - 5.png")} alt="" />
+          <img src= {require("../media/MacBook Pro 16_ - 5.png")} alt="" />
         </div>
         <div className="container">
          <div>
