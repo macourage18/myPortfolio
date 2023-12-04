@@ -12,7 +12,7 @@ export const Section1 =() =>{
             <p>Developer, UI/UX Designer <br/><span>Residing in Port Harcourt...</span></p>
             
             <div>
-              <Link to={""} download={""}>
+              <Link to={"../media/my portfolio.pdf"} download={""}>
                 <button className="hireMe">
                   Download CV
                 </button>
