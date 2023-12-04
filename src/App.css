@@ -526,6 +526,9 @@
   .sec4{
     height: 100%;
   }
+  .about{
+    height: 100%;
+  }
   .abt{
     font-size: var(--fontsizeMe);
   }
