@@ -12,9 +12,9 @@ export const Section1 =() =>{
             <p>Developer, UI/UX Designer <br/><span>Residing in Port Harcourt...</span></p>
             
             <div>
-              <Link to={'/Portfolio'}>
+              <Link to={""} download={""}>
                 <button className="hireMe">
-                  Hire Me !
+                  Download CV
                 </button>
               </Link>
               <Link to={'/Contact'}>

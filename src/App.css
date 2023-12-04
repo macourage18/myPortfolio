@@ -486,3 +486,38 @@
     height: 80%;
   }
 }
+/* =============== sec3 end ============== */
+/* =============== sec4 start ============== */
+.sec4{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8%;
+
+  background-image: url(../src/components/media/about.png);
+  background-size: 100%;
+  background-blend-mode: multiply;
+  background-color: #444444;
+}
+
+.abt{
+  color: var(--mywhite);
+  font-weight: 300;
+  font-size: var(--fontsizeBig);
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  color: var(--mygrey2);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 30px;
+  width: 87%;
+}
+
+.about span{
+  height: 20px;
+}
