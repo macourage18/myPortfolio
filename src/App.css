@@ -521,3 +521,9 @@
 .about span{
   height: 20px;
 }
+
+@media screen and (max-width:199px) {
+  .sec4{
+    height: auto;
+  }
+}
