@@ -524,7 +524,7 @@
 
 @media screen and (max-width:199px) {
   .sec4{
-    height: auto;
+    height: 100%;
   }
   .abt{
     font-size: var(--fontsizeMe);
