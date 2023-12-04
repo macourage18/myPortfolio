@@ -516,17 +516,15 @@
   font-weight: 400;
   padding: 30px;
   width: 87%;
+  height: 100%;
 }
 
 .about span{
   height: 20px;
 }
 
-@media screen and (max-width:199px) {
+@media screen and (max-width:699px) {
   .sec4{
-    height: 100%;
-  }
-  .about{
     height: 100%;
   }
   .abt{
