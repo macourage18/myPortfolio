@@ -322,11 +322,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 .des p{
   color: var(--mywhite);
   font-size: var(--fontsizeVsm);
-  font-weight: 400;
+  font-weight: 400; padding: 10px;
 }
 
 @media screen and (max-width: 699px){
@@ -452,7 +453,7 @@
   height: 50%;
   padding:  20px 30px;
   color: var(--mywhite);
-  border-radius: 15px;
+  border-radius: 15pProfessional 4 Landing Page Portfoliox;
 }
 @media screen  and (max-width: 699px) {
   .sec3{
