@@ -22,15 +22,16 @@ export const Section1 =() =>{
           </div>
          </div>
          <div>
-          <Link to="">
+          <Link to="https://oceancapitals.net/index.php">
           <p className="see"> Visit Site </p>
-          </Link>
+          
           <div className="card">
             <img src={require("../media/webimage.png")} alt="" />
             <div className="des">
             <p>Professional 4 Landing Page Portfolio</p>
             </div>
           </div>
+          </Link>
          </div>
          <div>
           <Link to="">
