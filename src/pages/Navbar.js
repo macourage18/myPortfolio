@@ -67,9 +67,6 @@ export const Navbar = () =>{
       <div className={`overlay ${overlay}`} onClick={()=>{handleOverlay()
       handleClick()
       }}>
-      {useToggle }
-      </div>
-      
       <nav className={`mobilenav ${active}`} >
         <Link to = "/"> Home </Link> 
         <Link to = "/Portfolio"> Portfolio </Link>
@@ -77,12 +74,16 @@ export const Navbar = () =>{
         <Link to = "/Contact"> Contact </Link>
 
        
-        <Link to={"https://wa.link/lle71m"}> <Whatsapp className="icns" /> </Link>
+        <Link to={"https://wa.link/lle71 m"}> <Whatsapp className="icns" /> </Link>
         <Link to={"https://github.com/macourage18"}> <Github className="icns" /> </Link>
         <Link to= {"https://twitter.com/mac_courage"} > <Twitter className="icns" /> </Link>
         <Link to= {"https://www.linkedin.com/in/courage-macjude-095a25220/"}> <Linkedin className="icns" /> </Link>
 
       </nav>
+      {useToggle }
+      </div>
+      
+      
       <nav className={ show ? "is-hidden" : "is-visible" } >
       
       <div className="logo">

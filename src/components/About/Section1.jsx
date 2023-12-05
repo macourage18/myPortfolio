@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 // import DownloadLink from "react-download-link";
-import "../media/CV.pdf"
 
 
 export const Section1 =() =>{
@@ -15,7 +14,7 @@ export const Section1 =() =>{
             <p>Developer, UI/UX Designer <br/><span>Residing in Port Harcourt...</span></p>
             
             <div>
-              <Link to={"CV.pdf"} target="../media/CV.pdf" download > 
+              <Link to={"../media/CV.pdf"} target="_blank" download > 
               <button className="hireMe">
                   Download CV
                 </button>
