@@ -453,7 +453,7 @@
   height: 50%;
   padding:  20px 30px;
   color: var(--mywhite);
-  border-radius: 15pProfessional 4 Landing Page Portfoliox;
+  border-radius: 15px;
 }
 @media screen  and (max-width: 699px) {
   .sec3{
@@ -500,7 +500,7 @@
   background-image: url(../src/components/media/about.png);
   background-size: 100%;
   background-blend-mode: multiply;
-  background-color: #444444;
+  background-color: #252525;
 }
 
 .abt{
