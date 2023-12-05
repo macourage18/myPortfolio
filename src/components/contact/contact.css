@@ -184,14 +184,14 @@
   height: 100vh;
 }
 .arrow{
-  position: absolute;
+  position: relative;
   color: var(--myblack2);
   left: 10%;
   top: 8%;
 }
 .cont3{
   position: relative;
-  width: 27%;
+  width: 30%;
   height: 55%;
   display: flex;
   justify-content: center;
@@ -213,7 +213,7 @@
   font-size: var(--fontsizeSm);
 }
 
-@media screen and (max-width: 699px){
+@media screen and (max-width: 500px){
   .div1{
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -263,4 +263,18 @@
     font-size: var(--fontsizeVsm);
   }
   
+}
+
+@media (min-width: 501px) and (max-width:1050px) {
+  .success{
+    font-size: var(--fontsizeSm);
+  }
+  .cont3{
+    width: 50%;
+    padding: 20px;
+    height: 60%;
+  }
+  .img{
+    width: 60%;
+  }
 }
