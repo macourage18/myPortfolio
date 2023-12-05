@@ -177,12 +177,20 @@
 
 .susPage{
   display: flex;
+
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
 }
+.arrow{
+  position: absolute;
+  color: var(--myblack2);
+  left: 10%;
+  top: 8%;
+}
 .cont3{
+  position: relative;
   width: 27%;
   height: 55%;
   display: flex;

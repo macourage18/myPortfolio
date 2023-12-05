@@ -1,5 +1,5 @@
 import "./contact.css"
-import { EnvelopePaperHeart, Github,  Linkedin,  Phone, Twitter, Whatsapp } from "react-bootstrap-icons"
+import { EnvelopePaperHeart, Github,ArrowBarLeft,  Linkedin,  Phone, Twitter, Whatsapp } from "react-bootstrap-icons"
 import { useForm, ValidationError } from "@formspree/react"
 import { Link } from "react-router-dom"
 
@@ -9,8 +9,15 @@ export const Contact1 = () =>{
 
   const [ state, handleSubmit ]= useForm("mqkvvoan")
   if (state.succeeded){
-    return (<div className="susPage">
+    const refresh =()=>{
+      window.location.reload();
+    }
+    return (
+    <div className="susPage">
     <div className="cont3">
+    <Link to="/Contact" >
+      <ArrowBarLeft className="arrow" onClick={refresh}/>
+    </Link>
       <img className="img" src={require("../media/emial.png")} alt="" />
       <h5 className="success"> Your message Has Been Sent !!! </h5>
     </div>
