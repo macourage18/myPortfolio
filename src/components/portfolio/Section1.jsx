@@ -10,40 +10,32 @@ export const Section1 =() =>{
           <img src= {require("../media/MacBook Pro 16_ - 5.png")} alt="" />
         </div>
         <div className="container">
-         <div>
-          <Link to="">
-          <p className="see"> Visit Site </p>
-          </Link>
-          <div className="card">
-            <img src={require("../media/webimage.png")} alt="" />
-            <div className="des">
-                <p>Professional 4 Landing Page Portfolio</p>
-            </div>
-          </div>
-         </div>
+     
          <div>
           <Link to="https://oceancapitals.net/index.php">
           <p className="see"> Visit Site </p>
           
           <div className="card">
-            <img src={require("../media/webimage.png")} alt="" />
+            <img src={require("../media/ocean.png")} alt="" />
             <div className="des">
-            <p>Professional 4 Landing Page Portfolio</p>
+            <p>Web App: Resposive Website for Financial Website</p>
             </div>
           </div>
           </Link>
          </div>
          <div>
-          <Link to="">
+          <Link to="https://maxalzon.comhttps://maxalzon.com/">
           <p className="see"> Visit Site </p>
-          </Link>
+          
           <div className="card">
-            <img src={require("../media/webimage.png")} alt="" />
+            <img src={require("../media/max.png")} alt="" />
             <div className="des">
-            <p>Professional 4 Landing Page Portfolio</p>
+            <p>Web App: Responsive Construction website for Max Alzon</p>
             </div>
           </div>
+          </Link>
          </div>
+    
            
           </div>
       </section>
