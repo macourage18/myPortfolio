@@ -18,9 +18,9 @@ export const Section2 = ()=>{
             <h2>Frontend</h2>
             <li>HTML</li>
             <li>CSS</li>
-            <li>Tailwind CSS</li>
+            {/* <li>Tailwind CSS</li> */}
             <li>ReactJS</li>
-            <li>NextJs</li>
+            <li>React Native</li>
             <li>Javascript</li>
           </ul>
           <ul>

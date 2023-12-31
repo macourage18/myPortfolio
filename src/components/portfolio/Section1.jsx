@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import BMP from "../media/bmp.png"
 
 export const Section1 =() =>{
   return(
@@ -31,6 +32,18 @@ export const Section1 =() =>{
             <img src={require("../media/max.png")} alt="" />
             <div className="des">
             <p>Web App: Responsive Construction website for Max Alzon</p>
+            </div>
+          </div>
+          </Link>
+         </div>
+         <div>
+          <Link to="https://bmp-eta.vercel.app/">
+          <p className="see"> Visit Site </p>
+          
+          <div className="card">
+            <img src={BMP} alt="" />
+            <div className="des">
+            <p>Web App: Responsive information website for BMP Inovations</p>
             </div>
           </div>
           </Link>
