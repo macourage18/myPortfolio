@@ -4,7 +4,7 @@ export const Section2 = ()=>{
     <section className="sec4">
     <h1 className="abt"> About Me </h1>
     <p className="about">
-    I'm a passionate front-end developer and product designer that specializes in developing cutting-edge mobile and web applications with simple user interfaces.<br/><span></span>
+    I'm a passionate full-stack developer and product designer that specializes in developing cutting-edge mobile and web applications with simple user interfaces.<br/><span></span>
 
     I have over three years of expertise with web2 and web3 technologies, and my special skill set enables me to design and create things that are aesthetically pleasing, useful, and functional.<br/><span></span>
 
