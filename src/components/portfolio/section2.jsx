@@ -23,13 +23,13 @@ export const Section2 = ()=>{
             <li>React Native</li>
             <li>Javascript</li>
           </ul>
-          <ul>
+          {/* <ul>
             <h2>Product Design</h2>
             <li>Figma</li>
             <li>Photoshop</li>
             <li>Corel Draw</li>
             <li>Inkscape</li>
-          </ul>
+          </ul> */}
         
         </div>
       </section>

@@ -12,7 +12,7 @@ export const Section1 =() =>{
             <div className="bg1"></div>
             <h4>Hi There! I Am</h4>
             <h1>Macourage</h1>
-            <p>Developer, UI/UX Designer <br/><span>Residing in Port Harcourt...</span></p>
+            <p>Developer <br/><span>Residing in Port Harcourt...</span></p>
             
             <div>
               <Link to={CvPdf} target="_blank" rel="noopner noreferrer" download={""}> 
